@@ -60,6 +60,8 @@ pipeline{
 	    }
 	    always {  
              echo 'This will always run'  
-         }  
+         }
+	    
+	    Email notification 
 
 
