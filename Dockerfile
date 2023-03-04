@@ -1,5 +1,7 @@
-FROM openjdk:alpine
-COPY target/springboot-maven-course-micro-svc-0.0.1-SNAPSHOT.jar
+FROM openjdk:latest
+MAINTAINER jani123@gmail.com
+WORKDIR /app
+COPY target/*.jar ./app.jar
 EXPOSE 8080
-ENV 
-ENTRYPOINT ["java","-jar","/app.jar"]
+CMD ["java","-jar","app.jar"]
+
