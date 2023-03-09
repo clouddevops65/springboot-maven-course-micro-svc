@@ -22,3 +22,4 @@ public class CourseController {
         return Arrays.asList("git","maven","sonar","nexus","jenkins");
     }
 }
+//create a another end point to the aws get all services
