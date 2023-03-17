@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jar-deployment
+  labels:
+    app: jar
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jar
+  template:
+    metadata:
+      labels:
+        app: jar
+    spec:
+      containers:
+      - name: jar
+        image: clouddevops65/jar:latest
+        ports:
+        - containerPort: 8080
